@@ -768,7 +768,7 @@ class ProjectsPage(QFrame):
 
         result = MessageBox(
             self.tr('Confirm Delete'),
-            f"确定要删除项目 '{project_name}' 吗?",
+            self.tr("Remove '{}' ?").format(project_name),
             self
         ).exec()
 
@@ -777,7 +777,7 @@ class ProjectsPage(QFrame):
 
         try:
             project_manger.remove(project_name)
-            show_info_bar(self, self.tr("Success"), f"项目{project_name}已删除", bar_type=3)
+            show_info_bar(self, self.tr("Success"), self.tr("Project {} Removed.").format(project_name), bar_type=3)
         except Exception as e:
             show_info_bar(self, self.tr("Error"), f"删除项目失败: {str(e)}", bar_type=1)
         self.refresh_projects()
@@ -867,7 +867,7 @@ class ProjectsPage(QFrame):
         self.format_combo.addItems(['new.dat.br', 'new.dat.xz', "new.dat", 'img', 'zst', 'payload', 'super',
                                     'update.app'])
         self.format_combo.currentTextChanged.connect(self.refresh_unpack)
-        self.partition_table.setHorizontalHeaderLabels(["NAME", "SIZE", "FS", "IMAGE", "ATTRIBUTES"])
+        self.partition_table.setHorizontalHeaderLabels([self.tr("NAME"), self.tr("SIZE"), self.tr("FS"), self.tr("IMAGE"), self.tr("ATTRIBUTES")])
         self.unpack_rb = RadioButton(self.tr("Unpack"), container)
         self.pack_rb = RadioButton(self.tr("Repack"), container)
         self.unpack_rb.clicked.connect(self.refresh_unpack)
