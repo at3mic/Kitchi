@@ -276,7 +276,7 @@ class ModuleManager:
                     self.addon_loader.register(id_, self.addon_entries.main, module.main)
                 else:
                     if self.master:
-                        InfoBar.warning("Manager",
+                        InfoBar.warning(self.master.tr("Manager"),
                         f"Can't registry Module {self.get_name(id_)} as Plugin, Check if enterances or main function in it.", parent=self.master)
                     else:
                         logging.warning(f"Can't registry Module {self.get_name(id_)} as Plugin, Check if enterances or main function in it.")
