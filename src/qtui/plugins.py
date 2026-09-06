@@ -664,10 +664,10 @@ class UninstallMpk(MessageBoxBase):
         # Build dynamic content warning strings
         plugin_display_name_for_message = self.value2 or self.value
         if plugin_display_name_for_message is None:
-            plugin_display_name_for_message = "Unknown Plugin"
+            plugin_display_name_for_message = self.tr("Unknown Plugin")
 
         if not self.value:
-            message_text = "Please select a plugin!"
+            message_text = self.tr("Please select a plugin!")
         elif not self.check_pass:
             message_text = f"Plugin '{plugin_display_name_for_message}' not found or cannot be uninstalled."
         elif module_manager.is_virtual(self.value):
@@ -683,7 +683,7 @@ class UninstallMpk(MessageBoxBase):
 
         # Dependencies sub-interface (Only visible if secondary broken dependencies exist)
         if self.arr:
-            self.depHeader = CaptionLabel("The following dependent plugins will also be removed:",
+            self.depHeader = CaptionLabel(self.tr("The following dependent plugins will also be removed:"),
                                           self)
             self.depHeader.setTextColor(QColor("#ffffff"), QColor("#ffffff"))
             self.viewLayout.addWidget(self.depHeader)
