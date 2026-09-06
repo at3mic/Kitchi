@@ -662,18 +662,18 @@ class UninstallMpk(MessageBoxBase):
         self.buttonLayout.deleteLater()
 
         # Build dynamic content warning strings
-        plugin_display_name_for_message = self.value2 or self.value
-        if plugin_display_name_for_message is None:
-            plugin_display_name_for_message = self.tr("Unknown Plugin")
+        plugin_name = self.value2 or self.value
+        if plugin_name is None:
+            plugin_name = self.tr("Unknown Plugin")
 
         if not self.value:
             message_text = self.tr("Please select a plugin!")
         elif not self.check_pass:
-            message_text = f"Plugin '{plugin_display_name_for_message}' not found or cannot be uninstalled."
+            message_text = self.tr("Plugin '{}' not found or cannot be uninstalled.").format(plugin_name)
         elif module_manager.is_virtual(self.value):
-            message_text = f"Plugin '{plugin_display_name_for_message}' is virtual and cannot be uninstalled this way."
+            message_text = self.tr("Plugin '{}' is virtual and cannot be uninstalled this way.").format(plugin_name)
         else:
-            message_text = f"Are you sure you want to uninstall plugin '{plugin_display_name_for_message}'?"
+            message_text = self.tr("Are you sure you want to uninstall plugin '{}'?").format(plugin_name)
 
         # Primary warning header (Replaces Tkinter Label with auto-wrapping Fluent label)
         self.msgLabel = SubtitleLabel(message_text, self)
@@ -712,7 +712,7 @@ class UninstallMpk(MessageBoxBase):
         # Conditional binding for validation check-passes
         if self.check_pass and self.value and not module_manager.is_virtual(self.value):
             self.uninstall_b = self.yesButton
-            self.uninstall_b.setText("Uninstall")
+            self.uninstall_b.setText(self.tr("Uninstall"))
             self.uninstall_b.clicked.connect(self.uninstall)
 
         self.viewLayout.addLayout(self.bottomLayout)
