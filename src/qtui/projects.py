@@ -680,11 +680,7 @@ class ProjectsPage(QFrame):
                 return
             self.start_job(self.dnd_task)
 
-    def _create_section_title(self, text):
-        """统一生成无边框、无背景的纯文本全局大标题"""
-        title = QLabel(text)
 
-        return title
 
     def refresh_projects(self):
         self.project_combo.clear()
@@ -790,7 +786,7 @@ class ProjectsPage(QFrame):
         layout.setSpacing(12)
 
         # 标题放外面
-        layout.addWidget(self._create_section_title(self.tr("Project Manage")))
+        layout.addWidget(QLabel(self.tr("Project Manage")))
 
         # 下半部分控件区域
         row1 = QHBoxLayout()
@@ -832,7 +828,7 @@ class ProjectsPage(QFrame):
 
         # 标题放外面
         frame = QHBoxLayout()
-        frame.addWidget(self._create_section_title(self.tr("Partition(s)")))
+        frame.addWidget(QLabel(self.tr("Partition(s)")))
         self.ring = IndeterminateProgressRing(self)
         self.ring.setFixedSize(16, 16)
         self.ring.hide()
@@ -1115,7 +1111,7 @@ class ProjectsPage(QFrame):
         layout.setSpacing(12)
 
         # 标题放外面
-        layout.addWidget(self._create_section_title(self.tr("Others")))
+        layout.addWidget(QLabel(self.tr("Others")))
 
         # 工具按钮行
         tools_layout = QHBoxLayout()
