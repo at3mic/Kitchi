@@ -8,7 +8,7 @@ from qfluentwidgets import (
 )
 
 from src.core.utils import temp, re_folder, hum_convert
-from src.qt_layer.settings_cfg import *
+from src.qtui.settings_cfg import *
 
 
 class SettingsPage(QScrollArea):

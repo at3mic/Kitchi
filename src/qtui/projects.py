@@ -19,7 +19,7 @@ from src.core.cpio import repack as cpio_repack
 from src.core.rsceutil import repack as rsceutil_repack
 from src.core.splash_editor.main import splash_repack
 from src.core.unpac import MODE as PACMODE
-from src.qt_layer.log_box import LogMessageBoxBase
+from src.qtui.log_box import LogMessageBoxBase
 
 try:
     from cpb_file import extract as extract_cpb
@@ -55,8 +55,8 @@ from src.core import splituapp
 from src.core import utils
 from src.core.payload_extract import extract_partitions_from_payload
 from src.core.pygpt.gpt_reader import GPTReader
-from src.qt_layer.settings import cfg
-from src.qt_layer.widgets import NewProjectDialog, show_info_bar, PackSettingsDialog, ConvertImageMessageBox, \
+from src.qtui.settings import cfg
+from src.qtui.widgets import NewProjectDialog, show_info_bar, PackSettingsDialog, ConvertImageMessageBox, \
     PackSuperMessageBox, RepackZipMessageBox
 from src.core.romfs_parse import RomfsParse
 from src.core.splash_editor.src.logo_gen_decoder import process_splashimg

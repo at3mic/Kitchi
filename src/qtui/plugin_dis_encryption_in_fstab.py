@@ -8,11 +8,11 @@ from qfluentwidgets import (
     BodyLabel, PushButton, CheckBox, SearchLineEdit,
     MessageBoxBase, TableWidget
 )
-from src.qt_layer.settings_cfg import cfg
+from src.qtui.settings_cfg import cfg
 from src.core.utils import JsonEdit
 
 
-class DisableAvbMessageBox(MessageBoxBase):
+class DisableEncryptionMessageBox(MessageBoxBase):
     def __init__(self, parent=None):
         super().__init__(parent)
 
@@ -24,11 +24,11 @@ class DisableAvbMessageBox(MessageBoxBase):
 
     def __init_ui(self):
         """Instantiates all interface components cleanly using Fluent widgets."""
-        self.titleLabel = BodyLabel(self.tr("Disable AVB in fstab"), self)
+        self.titleLabel = BodyLabel(self.tr("Disable data encryption"), self)
         self.titleLabel.setStyleSheet("font-size: 18px; font-weight: bold;")
 
         hint_text = self.tr(
-            "Select the partition(s) where you want to disable the AVB check.\n"
+            "Select the partition(s) where you want to disable the force data encryption on first boot.\n"
             "The tool will automatically find and edit the fstab files."
         )
         self.hintLabel = BodyLabel(hint_text, self)
