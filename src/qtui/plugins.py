@@ -1185,13 +1185,13 @@ class BuiltInPlugins:
         if dialog.exec():
             path = dialog.file_path_edit.text()
             if not os.path.exists(path) or not path.strip():
-                InfoBar.warning('Please choose a path.', self.master)
+                InfoBar.warning(self.master.tr('Please choose a path.'), self.master)
                 return
             for root, _, files in os.walk(path, topdown=True):
                 for f in files:
                     if f.endswith('.xml'):
                         InfoBar.info(
-                            title="Processing File",
+                            title=self.master.tr("Processing File"),
                             content=f"Decrypting {f}",
                             orient=Qt.Horizontal,
                             isClosable=False,
@@ -1214,7 +1214,7 @@ class BuiltInPlugins:
                 orig_size = file_size = os.path.getsize(file_path)
                 zeros_ = bytearray(buff_size)
                 progress_bar = InfoBar.info(
-                    title="Processing File",
+                    title=self.master.tr("Processing File"),
                     content="Running - 0%",
                     orient=Qt.Horizontal,
                     isClosable=False,
