@@ -4,57 +4,57 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <location filename="../../src/qtui/about.py" line="70"/>
+        <location filename="../../src/qtui/about.py" line="83"/>
         <source>- Focus on Android ROM modification -</source>
         <translation>- 专注于Android ROM修改 -</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="90"/>
+        <location filename="../../src/qtui/about.py" line="103"/>
         <source>System Info</source>
         <translation>系统信息</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="96"/>
+        <location filename="../../src/qtui/about.py" line="109"/>
         <source>Tool Version</source>
         <translation>工具版本</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="97"/>
+        <location filename="../../src/qtui/about.py" line="110"/>
         <source>Python Version</source>
         <translation>Python版本</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="98"/>
+        <location filename="../../src/qtui/about.py" line="111"/>
         <source>Operating system</source>
         <translation>操作系统</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="99"/>
+        <location filename="../../src/qtui/about.py" line="112"/>
         <source>Architecture</source>
         <translation>架构</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="129"/>
+        <location filename="../../src/qtui/about.py" line="142"/>
         <source>Dependencies</source>
         <translation>依赖</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="163"/>
+        <location filename="../../src/qtui/about.py" line="176"/>
         <source>Chinese-Simplified By ColdWindScholar</source>
         <translation>简体中文由寒风居士翻译</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="166"/>
+        <location filename="../../src/qtui/about.py" line="179"/>
         <source>Open Source / Free / faster</source>
         <translation>开源 / 自由 / 极速</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="171"/>
+        <location filename="../../src/qtui/about.py" line="184"/>
         <source>GitHub: MIO-KITCHEN-SOURCE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/about.py" line="174"/>
+        <location filename="../../src/qtui/about.py" line="187"/>
         <source>© 2026 ColdWindScholar All Rights Reserved.</source>
         <translation>© 2026 ColdWindScholar 保留所有权利。</translation>
     </message>
@@ -62,43 +62,43 @@
 <context>
     <name>AllowSELinuxAuditMessageBox</name>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="12"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="25"/>
         <source>Allow SELinux audit</source>
         <translation>允许 Selinux 审计</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="21"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="34"/>
         <source>Log file:</source>
         <translation>日志文件：</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="26"/>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="44"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="39"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="57"/>
         <source>Choose</source>
         <translation>选择</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="39"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="52"/>
         <source>Output folder:</source>
         <translation>输出文件夹：</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="54"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="67"/>
         <source>Run</source>
         <translation>运行</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="55"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="68"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="65"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="78"/>
         <source>Select SELinux Log File</source>
         <translation>选择Selinux日志文件</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="72"/>
+        <location filename="../../src/qtui/plugin_allow_selinux_audit.py" line="85"/>
         <source>Select Output Directory</source>
         <translation>选择输出文件夹</translation>
     </message>
@@ -379,42 +379,42 @@ or click to select a file</source>
 <context>
     <name>HomePage</name>
     <message>
-        <location filename="../../src/qtui/home.py" line="50"/>
+        <location filename="../../src/qtui/home.py" line="63"/>
         <source>Hi! What can I do for you? ✨</source>
         <translation>你好呀！我能为你做什么？✨</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="71"/>
+        <location filename="../../src/qtui/home.py" line="84"/>
         <source>Ambassador: KeMiaoJiang</source>
         <translation>形象大使：KeMiaoJiang</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="72"/>
+        <location filename="../../src/qtui/home.py" line="85"/>
         <source>Painter: HY-惠</source>
         <translation>画师: HY-惠</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="73"/>
+        <location filename="../../src/qtui/home.py" line="86"/>
         <source>Welcome To MIO-KITCHEN</source>
         <translation>欢迎来到MIO-KITCHEN</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="90"/>
+        <location filename="../../src/qtui/home.py" line="103"/>
         <source>Campaign &amp; Community</source>
         <translation>社区与运动</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="122"/>
+        <location filename="../../src/qtui/home.py" line="135"/>
         <source>Good morning! ~_~</source>
         <translation>早上好！ ~_~</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="122"/>
+        <location filename="../../src/qtui/home.py" line="135"/>
         <source>Good afternoon! O^O</source>
         <translation>下午好！ O^O</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="122"/>
+        <location filename="../../src/qtui/home.py" line="135"/>
         <source>Good evening! Zzz~~</source>
         <translation>晚上好！ Zzz~~</translation>
     </message>
@@ -423,52 +423,52 @@ or click to select a file</source>
         <translation type="vanished">{time_greeting} 需要我解包些分区吗? :&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="125"/>
+        <location filename="../../src/qtui/home.py" line="138"/>
         <source>{} Need me to unpack some partitions? :&gt;</source>
         <translation>{} 需要我解包什么分区呀? :&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="126"/>
+        <location filename="../../src/qtui/home.py" line="139"/>
         <source>Master, let&apos;s patch some fresh fs_config mappings! w^w</source>
         <translation>主人，我们修补些新的fs_config映射吧！</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="127"/>
+        <location filename="../../src/qtui/home.py" line="140"/>
         <source>MIO-KITCHEN is active! Let&apos;s build something awesome today! Pin~</source>
         <translation>MIO-KITCHEN 已启动！今天让我们一起创造非凡！动起来~</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="128"/>
+        <location filename="../../src/qtui/home.py" line="141"/>
         <source>Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO</source>
         <translation>你的ROM厨房助手：kemiaojiang 随时待命！ OwO</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="129"/>
+        <location filename="../../src/qtui/home.py" line="142"/>
         <source>What can i do for ya~ :)</source>
         <translation>我能为你做什么呀～：）</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="130"/>
+        <location filename="../../src/qtui/home.py" line="143"/>
         <source>QwQ, I don&apos;t recognise this format!</source>
         <translation>QwQ，我不认识这个格式！</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="131"/>
+        <location filename="../../src/qtui/home.py" line="144"/>
         <source>Unpacking roms...</source>
         <translation>正在解包ROM。。。</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="132"/>
+        <location filename="../../src/qtui/home.py" line="145"/>
         <source>My binaries are the latest (￣▽￣)~* </source>
         <translation>我的二进制都是最新的 (￣▽￣)~* </translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="137"/>
+        <location filename="../../src/qtui/home.py" line="150"/>
         <source>Wahh! Poke limit exceeded! Stop it, it tickles too much~! ヽ(≧Д≦)ノ</source>
         <translation>哇！别戳我了！快停下， 太痒了！ ヽ(≧Д≦)ノ</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="139"/>
+        <location filename="../../src/qtui/home.py" line="152"/>
         <source>System Overload! Going to sleep... 💤</source>
         <translation>系统过载！准备休眠。。。💤</translation>
     </message>
@@ -560,7 +560,7 @@ or click to select a file</source>
 <context>
     <name>LogMessageBoxBase</name>
     <message>
-        <location filename="../../src/qtui/log_box.py" line="15"/>
+        <location filename="../../src/qtui/log_box.py" line="28"/>
         <source>Clear</source>
         <translation>清空</translation>
     </message>
@@ -622,27 +622,27 @@ or click to select a file</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../src/qtui/tool.py" line="92"/>
+        <location filename="../../src/qtui/tool.py" line="105"/>
         <source>Home</source>
         <translation>主页</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/tool.py" line="93"/>
+        <location filename="../../src/qtui/tool.py" line="106"/>
         <source>Project</source>
         <translation>项目</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/tool.py" line="94"/>
+        <location filename="../../src/qtui/tool.py" line="107"/>
         <source>Plugins</source>
         <translation>插件</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/tool.py" line="95"/>
+        <location filename="../../src/qtui/tool.py" line="108"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/tool.py" line="96"/>
+        <location filename="../../src/qtui/tool.py" line="109"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
@@ -1262,6 +1262,7 @@ or click to select a file</source>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="1001"/>
+        <location filename="../../src/qtui/projects.py" line="1011"/>
         <location filename="../../src/qtui/projects.py" line="1095"/>
         <source>project&apos;s not exist</source>
         <translation>项目不存在</translation>
@@ -1413,9 +1414,13 @@ or click to select a file</source>
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/settings.py" line="48"/>
         <source>Change Language</source>
-        <translation>改变语言</translation>
+        <translation type="vanished">改变语言</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/settings.py" line="48"/>
+        <source>Choose your Language</source>
+        <translation>选择您的语言</translation>
     </message>
     <message>
         <location filename="../../src/qtui/settings.py" line="53"/>
@@ -1431,6 +1436,16 @@ or click to select a file</source>
         <location filename="../../src/qtui/settings.py" line="64"/>
         <source>Project Structure</source>
         <translation>项目结构</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/settings.py" line="65"/>
+        <source>Adjust project Structure</source>
+        <translation>调整项目结构</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/settings.py" line="73"/>
+        <source>cpioImpl</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/settings.py" line="78"/>
@@ -1570,6 +1585,7 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/plugins.py" line="1035"/>
         <location filename="../../src/qtui/plugins.py" line="1080"/>
+        <location filename="../../src/qtui/plugins.py" line="1085"/>
         <location filename="../../src/qtui/plugins.py" line="1120"/>
         <source>Magisk Patch</source>
         <translation>面具修补</translation>
