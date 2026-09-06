@@ -970,8 +970,8 @@ class InstallMpk(MessageBoxBase):
         # 更新 Fluent UI 组件展示
         self.name_label.setText(self.mconf.get('module', 'name'))
         self.logo.setPixmap(self.pyt)
-        self.author.setText("作者：{}".format(self.mconf.get('module', 'author')))
-        self.version.setText("版本：{}".format(self.mconf.get('module', 'version')))
+        self.author.setText(self.tr("Author：{}").format(self.mconf.get('module', 'author')))
+        self.version.setText(self.tr("Version：{}").format(self.mconf.get('module', 'version')))
         self.text.setText(self.mconf.get('module', 'describe'))
 
     def unavailable(self):
