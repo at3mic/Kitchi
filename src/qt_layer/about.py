@@ -5,7 +5,7 @@ import random
 import sys
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QCursor
+from PySide6.QtGui import QCursor, QColor, QFont
 from PySide6.QtWidgets import QVBoxLayout, QWidget, QGridLayout, QHBoxLayout, QFrame
 from qfluentwidgets import (
     TitleLabel, BodyLabel, CaptionLabel, HyperlinkLabel,
@@ -107,8 +107,7 @@ class AboutPage(QFrame):
 
         for row, (label, value) in enumerate(sys_info_data):
             lbl = BodyLabel(label)
-            lbl.setStyleSheet("color: #A0A0A0; font-size: 12px;")
-
+            lbl.setStyleSheet("color: #A0A0A0; font-size: 13px;")
             val_lbl = BodyLabel(value)
             val_lbl.setStyleSheet("color: #38B6FF; font-weight: 700; font-size: 12px;")
             val_lbl.setAlignment(Qt.AlignmentFlag.AlignRight)
