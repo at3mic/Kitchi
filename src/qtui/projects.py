@@ -653,7 +653,7 @@ class ProjectsPage(QFrame):
         print(f"Generating:dtbo.img")
         list_ = [os.path.join(work, "dtbo", "dtbo", f) for f in os.listdir(f"{work}/dtbo/dtbo") if
                  f.startswith("dtbo.")]
-        mkdtboimg.create_dtbo(project_manger.current_work_output_path() + "dtbo.img",
+        mkdtboimg.create_dtbo(os.path.join(project_manger.current_work_output_path(), "dtbo.img"),
                               sorted(list_, key=lambda x: int(x.rsplit('.')[1])), 4096)
         rmtree(f"{work}/dtbo")
         print("Pack dtbo done")
