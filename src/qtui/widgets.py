@@ -387,7 +387,7 @@ class PackSettingsDialog(MessageBoxBase):
 
         self.size_handle_label = self._create_field_label(self.tr("Size Handle:"))
         self.size_handle_combo = ComboBox(ext4_container)
-        self.size_handle_combo.addItems(["自动读取", "手动固定"])
+        self.size_handle_combo.addItems([self.tr("Calculate Auto"), self.tr("Origin Size")])
 
         ext4_grid.addWidget(self.pack_method_label)
         ext4_grid.addWidget(self.pack_method_combo, 1)

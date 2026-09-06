@@ -1610,7 +1610,7 @@ class ProjectsPage(QFrame):
                                                         dialog.f2fs_compress_switch.isChecked(),
                                                         dialog.pack_method_combo.currentText(),
                                                         dialog.brotli_slider.value(),
-                                                        dialog.size_handle_combo.currentText() == "手动固定",
+                                                        dialog.size_handle_combo.currentText() == self.tr("Origin Size"),
                                                         )
             else:
                 return
