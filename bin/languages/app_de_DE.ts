@@ -401,67 +401,67 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good morning! ~_~</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good afternoon! O^O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good evening! Zzz~~</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="124"/>
-        <source>{time_greeting} Need me to unpack some partitions? :&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../src/qtui/home.py" line="125"/>
-        <source>Master, let&apos;s patch some fresh fs_config mappings! w^w</source>
+        <source>{} Need me to unpack some partitions? :&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="126"/>
-        <source>MIO-KITCHEN is active! Let&apos;s build something awesome today! Pin~</source>
+        <source>Master, let&apos;s patch some fresh fs_config mappings! w^w</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="127"/>
-        <source>Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO</source>
+        <source>MIO-KITCHEN is active! Let&apos;s build something awesome today! Pin~</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="128"/>
-        <source>What can i do for ya~ :)</source>
+        <source>Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="129"/>
-        <source>QwQ, I don&apos;t recognise this format!</source>
+        <source>What can i do for ya~ :)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="130"/>
-        <source>Unpacking roms...</source>
+        <source>QwQ, I don&apos;t recognise this format!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="131"/>
+        <source>Unpacking roms...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/home.py" line="132"/>
         <source>My binaries are the latest (￣▽￣)~* </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="136"/>
+        <location filename="../../src/qtui/home.py" line="137"/>
         <source>Wahh! Poke limit exceeded! Stop it, it tickles too much~! ヽ(≧Д≦)ノ</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="138"/>
+        <location filename="../../src/qtui/home.py" line="139"/>
         <source>System Overload! Going to sleep... 💤</source>
         <translation type="unfinished"></translation>
     </message>

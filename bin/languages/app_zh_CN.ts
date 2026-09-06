@@ -404,67 +404,71 @@ or click to select a file</source>
         <translation>社区与运动</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good morning! ~_~</source>
         <translation>早上好！ ~_~</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good afternoon! O^O</source>
         <translation>下午好！ O^O</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="121"/>
+        <location filename="../../src/qtui/home.py" line="122"/>
         <source>Good evening! Zzz~~</source>
         <translation>晚上好！ Zzz~~</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="124"/>
         <source>{time_greeting} Need me to unpack some partitions? :&gt;</source>
-        <translation>{time_greeting} 需要我解包些分区吗? :&gt;</translation>
+        <translation type="vanished">{time_greeting} 需要我解包些分区吗? :&gt;</translation>
     </message>
     <message>
         <location filename="../../src/qtui/home.py" line="125"/>
+        <source>{} Need me to unpack some partitions? :&gt;</source>
+        <translation>{} 需要我解包什么分区呀? :&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/home.py" line="126"/>
         <source>Master, let&apos;s patch some fresh fs_config mappings! w^w</source>
         <translation>主人，我们修补些新的fs_config映射吧！</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="126"/>
+        <location filename="../../src/qtui/home.py" line="127"/>
         <source>MIO-KITCHEN is active! Let&apos;s build something awesome today! Pin~</source>
         <translation>MIO-KITCHEN 已启动！今天让我们一起创造非凡！动起来~</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="127"/>
+        <location filename="../../src/qtui/home.py" line="128"/>
         <source>Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO</source>
         <translation>你的ROM厨房助手：kemiaojiang 随时待命！ OwO</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="128"/>
+        <location filename="../../src/qtui/home.py" line="129"/>
         <source>What can i do for ya~ :)</source>
         <translation>我能为你做什么呀～：）</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="129"/>
+        <location filename="../../src/qtui/home.py" line="130"/>
         <source>QwQ, I don&apos;t recognise this format!</source>
         <translation>QwQ，我不认识这个格式！</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="130"/>
+        <location filename="../../src/qtui/home.py" line="131"/>
         <source>Unpacking roms...</source>
         <translation>正在解包ROM。。。</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="131"/>
+        <location filename="../../src/qtui/home.py" line="132"/>
         <source>My binaries are the latest (￣▽￣)~* </source>
         <translation>我的二进制都是最新的 (￣▽￣)~* </translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="136"/>
+        <location filename="../../src/qtui/home.py" line="137"/>
         <source>Wahh! Poke limit exceeded! Stop it, it tickles too much~! ヽ(≧Д≦)ノ</source>
         <translation>哇！别戳我了！快停下， 太痒了！ ヽ(≧Д≦)ノ</translation>
     </message>
     <message>
-        <location filename="../../src/qtui/home.py" line="138"/>
+        <location filename="../../src/qtui/home.py" line="139"/>
         <source>System Overload! Going to sleep... 💤</source>
         <translation>系统过载！准备休眠。。。💤</translation>
     </message>

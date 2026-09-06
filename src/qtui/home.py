@@ -132,7 +132,7 @@ class HomePage(QWidget):
             self.tr("My binaries are the latest (￣▽￣)~* ")
         ]
 
-        if self.react_click_count == 7:
+        if self.react_click_count >= 7:
             self.lbl_msg.setText(
                 self.tr("Wahh! Poke limit exceeded! Stop it, it tickles too much~! ヽ(≧Д≦)ノ"))
         elif self.react_click_count >= 15:
