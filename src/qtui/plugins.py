@@ -776,7 +776,6 @@ class UninstallMpk(MessageBoxBase):
             # Replaces self.update_idletasks() to instantly force visual updates to screen
             QApplication.processEvents()
 
-        print("正在卸载：{}".format(show_name if show_name else name))
 
         # 3. File System Removal Process
         if os.path.exists(module_path):
