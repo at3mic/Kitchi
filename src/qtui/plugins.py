@@ -979,7 +979,7 @@ class InstallMpk(MessageBoxBase):
         self.pyt = QPixmap()
         self.pyt.loadFromData(images.error_logo_byte)
 
-        self.name_label.setText("请选择一个插件")
+        self.name_label.setText(self.tr("PLease select a plugin"))
         self.name_label.setTextColor(QColor("#ffcc00"), QColor("#ffcc00"))
         self.logo.setPixmap(self.pyt)
 
