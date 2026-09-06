@@ -920,11 +920,11 @@ class InstallMpk(MessageBoxBase):
             self.installb.setText(self.tr("Retry"))
             self.installb.setEnabled(True)
         elif ret == module_error_codes.IsBroken:
-            self.state.setText("请选择一个插件")
+            self.state.setText(self.tr("The plugin's broken."))
             self.installb.setText(self.tr("Retry"))
             self.installb.setEnabled(True)
         elif ret == module_error_codes.Normal:
-            self.state.setText("安装完毕")
+            self.state.setText(self.tr("Installed"))
             self.installb.setText(self.tr("Done"))
             self.installb.setEnabled(True)
 
