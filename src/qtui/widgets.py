@@ -620,7 +620,7 @@ class PackSuperMessageBox(MessageBoxBase):
         self.viewLayout.addWidget(self.titleLabel)
 
         # 2. Partition Type Section
-        self.viewLayout.addWidget(SubtitleLabel(self.tr("Super Type"), self))
+        self.viewLayout.addWidget(BodyLabel(self.tr("Super Type"), self))
         lf1_layout = QHBoxLayout()
         self.type_group = QButtonGroup(self)
         radios = [("A-only", 1), ("Virtual-ab", 2), ("A/B", 3)]
@@ -633,7 +633,7 @@ class PackSuperMessageBox(MessageBoxBase):
         self.viewLayout.addLayout(lf1_layout)
 
         # 3. Attributes Section
-        self.viewLayout.addWidget(SubtitleLabel(self.tr("Attribute"), self))
+        self.viewLayout.addWidget(BodyLabel(self.tr("Attribute"), self))
         lf1_r_layout = QHBoxLayout()
         self.attrib_group = QButtonGroup(self)
         self.rb_readonly = RadioButton("Readonly", self)
@@ -646,16 +646,16 @@ class PackSuperMessageBox(MessageBoxBase):
         self.viewLayout.addLayout(lf1_r_layout)
 
         # 4. Settings Section
-        self.viewLayout.addWidget(SubtitleLabel(self.tr("Settings"), self))
+        self.viewLayout.addWidget(BodyLabel(self.tr("Settings"), self))
         lf2_layout = QHBoxLayout()
 
-        lf2_layout.addWidget(SubtitleLabel(self.tr("Group Name"), self))
+        lf2_layout.addWidget(BodyLabel(self.tr("Group Name"), self))
         self.show_group_name = ComboBox(self)
         self.show_group_name.addItems(["qti_dynamic_partitions", "main", "mot_dp_group"])
         self.show_group_name.setCurrentIndex(0)
         lf2_layout.addWidget(self.show_group_name)
 
-        lf2_layout.addWidget(SubtitleLabel(self.tr("Super Size"), self))
+        lf2_layout.addWidget(BodyLabel(self.tr("Super Size"), self))
         self.super_size_edit = LineEdit(self)
         self.super_size_edit.setText("9126805504")
         self.super_size_edit.textChanged.connect(self.validate_digits)
@@ -663,7 +663,7 @@ class PackSuperMessageBox(MessageBoxBase):
         self.viewLayout.addLayout(lf2_layout)
 
         # 5. Pack Partitions Section
-        self.viewLayout.addWidget(SubtitleLabel(self.tr("Partition(s)"), self))
+        self.viewLayout.addWidget(BodyLabel(self.tr("Partition(s)"), self))
         self.tl = ListWidget(self)
         self.tl.setMinimumHeight(180)
         self.viewLayout.addWidget(self.tl)
