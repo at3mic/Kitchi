@@ -772,7 +772,7 @@ class UninstallMpk(MessageBoxBase):
 
         # 2. Update Button Text Dynamically (Uninstallation in progress)
         if self.uninstall_b:
-            self.uninstall_b.setText("正在卸载：{}".format(show_name or name))
+            self.uninstall_b.setText(self.tr("Uninstalling：{}").format(show_name or name))
             # Replaces self.update_idletasks() to instantly force visual updates to screen
             QApplication.processEvents()
 
@@ -810,10 +810,9 @@ class UninstallMpk(MessageBoxBase):
 
         elif plugin_successfully_removed_fs:
             if self.uninstall_b:
-                self.uninstall_b.setText("卸载完成！".format(show_name if show_name else name))
+                self.uninstall_b.setText(self.tr("Uninstall {} Done！").format(show_name or name))
                 QApplication.processEvents()
 
-            print("卸载完成！".format(show_name if show_name else name))
             logging.info(f"Plugin '{name}' (DisplayName: '{show_name}') considered removed from filesystem.")
 
         logging.debug(f"UninstallMpk.remove completed for: {name}")
