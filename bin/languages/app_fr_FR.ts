@@ -426,6 +426,21 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/qtui/home.py" line="126"/>
+        <source>MIO-KITCHEN is active! Let&apos;s build something awesome today! Pin~</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/home.py" line="127"/>
+        <source>Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/home.py" line="128"/>
+        <source>What can i do for ya~ :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/home.py" line="129"/>
         <source>QwQ, I don&apos;t recognise this format!</source>
         <translation type="unfinished"></translation>
@@ -1078,8 +1093,8 @@ or click to select a file</source>
         <location filename="../../src/qtui/projects.py" line="766"/>
         <location filename="../../src/qtui/projects.py" line="1001"/>
         <location filename="../../src/qtui/projects.py" line="1011"/>
-        <location filename="../../src/qtui/projects.py" line="1097"/>
-        <location filename="../../src/qtui/projects.py" line="1103"/>
+        <location filename="../../src/qtui/projects.py" line="1095"/>
+        <location filename="../../src/qtui/projects.py" line="1101"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1239,82 +1254,82 @@ or click to select a file</source>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="1001"/>
-        <location filename="../../src/qtui/projects.py" line="1097"/>
+        <location filename="../../src/qtui/projects.py" line="1095"/>
         <source>project&apos;s not exist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1080"/>
+        <location filename="../../src/qtui/projects.py" line="1078"/>
         <source>Pack Done！Output：%s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1103"/>
+        <location filename="../../src/qtui/projects.py" line="1101"/>
         <source>device code&apos;s empty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1120"/>
+        <location filename="../../src/qtui/projects.py" line="1118"/>
         <source>Others</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1124"/>
+        <location filename="../../src/qtui/projects.py" line="1122"/>
         <source>Pack Zip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1126"/>
+        <location filename="../../src/qtui/projects.py" line="1124"/>
         <source>Pack Super</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1128"/>
+        <location filename="../../src/qtui/projects.py" line="1126"/>
         <source>Format Convertion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1130"/>
+        <location filename="../../src/qtui/projects.py" line="1128"/>
         <source>APK Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1150"/>
+        <location filename="../../src/qtui/projects.py" line="1148"/>
         <source>Work path does not exist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1150"/>
+        <location filename="../../src/qtui/projects.py" line="1148"/>
         <source>Projects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1167"/>
+        <location filename="../../src/qtui/projects.py" line="1165"/>
         <source>origin logo missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1223"/>
+        <location filename="../../src/qtui/projects.py" line="1221"/>
         <source>Repacked %s Done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1244"/>
+        <location filename="../../src/qtui/projects.py" line="1242"/>
         <source>Warning:file_context not found!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1613"/>
+        <location filename="../../src/qtui/projects.py" line="1611"/>
         <source>Origin Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1776"/>
+        <location filename="../../src/qtui/projects.py" line="1774"/>
         <source>transferfile&apos;s missing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qtui/projects.py" line="1911"/>
+        <location filename="../../src/qtui/projects.py" line="1909"/>
         <source>Unpacking Done</source>
         <translation type="unfinished"></translation>
     </message>
