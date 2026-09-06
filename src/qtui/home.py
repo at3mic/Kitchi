@@ -107,6 +107,7 @@ class HomePage(QWidget):
         right_layout.addStretch()
         layout.addLayout(right_layout)
         self.setLayout(layout)
+        self.react()
 
     def react(self):
         current_time = datetime.datetime.now()
