@@ -801,6 +801,16 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/qtui/widgets.py" line="390"/>
+        <source>Calculate Auto</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/widgets.py" line="390"/>
+        <source>Origin Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/widgets.py" line="407"/>
         <source>EROFS Settings</source>
         <translation type="unfinished"></translation>
@@ -917,6 +927,12 @@ or click to select a file</source>
         <location filename="../../src/qtui/widgets.py" line="673"/>
         <location filename="../../src/qtui/widgets.py" line="674"/>
         <source>Enable Sparse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/widgets.py" line="679"/>
+        <location filename="../../src/qtui/widgets.py" line="680"/>
+        <source>Remove source files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1211,6 +1227,11 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/projects.py" line="1244"/>
         <source>Warning:file_context not found!!!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="1613"/>
+        <source>Origin Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -804,6 +804,16 @@ or click to select a file</source>
         <translation>大小处理：</translation>
     </message>
     <message>
+        <location filename="../../src/qtui/widgets.py" line="390"/>
+        <source>Calculate Auto</source>
+        <translation>自动计算</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/widgets.py" line="390"/>
+        <source>Origin Size</source>
+        <translation>原大小</translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/widgets.py" line="407"/>
         <source>EROFS Settings</source>
         <translation>EROFS设置</translation>
@@ -921,6 +931,12 @@ or click to select a file</source>
         <location filename="../../src/qtui/widgets.py" line="674"/>
         <source>Enable Sparse</source>
         <translation>启用Sparse</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/widgets.py" line="679"/>
+        <location filename="../../src/qtui/widgets.py" line="680"/>
+        <source>Remove source files</source>
+        <translation>删除源文件</translation>
     </message>
     <message>
         <location filename="../../src/qtui/widgets.py" line="683"/>
@@ -1230,6 +1246,11 @@ or click to select a file</source>
         <location filename="../../src/qtui/projects.py" line="1244"/>
         <source>Warning:file_context not found!!!</source>
         <translation>警告：file_context 不存在</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="1613"/>
+        <source>Origin Size</source>
+        <translation>原大小</translation>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="1776"/>
