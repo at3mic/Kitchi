@@ -676,8 +676,8 @@ class PackSuperMessageBox(MessageBoxBase):
 
         t_frame_layout = QHBoxLayout()
         self.switch_delete = SwitchButton(self)
-        self.switch_delete.setOffText("删除源文件")
-        self.switch_delete.setOnText("删除源文件")
+        self.switch_delete.setOffText(self.tr("Remove source files"))
+        self.switch_delete.setOnText(self.tr("Remove source files"))
         t_frame_layout.addWidget(self.switch_delete)
 
         self.btn_refresh = PushButton(self.tr("Refresh"), self)
