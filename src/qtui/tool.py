@@ -134,6 +134,6 @@ def __init__qt(args):
     sys.exit(app.exec())
 
 
-init = lambda args: __init__qt(args)
+init = __init__qt
 if __name__ == '__main__':
     init(sys.argv)
