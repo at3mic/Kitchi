@@ -1076,6 +1076,10 @@ or click to select a file</source>
         <location filename="../../src/qtui/projects.py" line="723"/>
         <location filename="../../src/qtui/projects.py" line="741"/>
         <location filename="../../src/qtui/projects.py" line="766"/>
+        <location filename="../../src/qtui/projects.py" line="1001"/>
+        <location filename="../../src/qtui/projects.py" line="1011"/>
+        <location filename="../../src/qtui/projects.py" line="1097"/>
+        <location filename="../../src/qtui/projects.py" line="1103"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1277,6 +1281,11 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/projects.py" line="1150"/>
         <source>Work path does not exist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="1150"/>
+        <source>Projects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
