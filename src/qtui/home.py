@@ -121,11 +121,11 @@ class HomePage(QWidget):
         time_greeting = self.tr("Good morning! ~_~") if 5 <= hour < 12 else self.tr("Good afternoon! O^O") if 12 <= hour < 18 else self.tr("Good evening! Zzz~~")
 
         greetings = [
-            self.tr(f"{time_greeting} Need me to unpack some partitions? :>"),
+            self.tr("{time_greeting} Need me to unpack some partitions? :>").format(time_greeting),
             self.tr("Master, let's patch some fresh fs_config mappings! w^w"),
-            "MIO-KITCHEN is active! Let's build something awesome today! Pin~",
-            "Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO",
-            "What can i do for ya~ :)",
+            self.tr("MIO-KITCHEN is active! Let's build something awesome today! Pin~"),
+            self.tr("Your ROM kitchen helper KeMiaoJiang is ready for commands! OwO"),
+            self.tr("What can i do for ya~ :)"),
             self.tr("QwQ, I don't recognise this format!"),
             self.tr("Unpacking roms..."),
             self.tr("My binaries are the latest (￣▽￣)~* ")
