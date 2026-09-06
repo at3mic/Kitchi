@@ -156,9 +156,11 @@ class Builder:
                 "--hidden-import",
                 "pywin32",
                 '--collect-all', 'pywin32',
+                '--collect-all', 'win32',
                 '--collect-all', 'win32api',
                 "--hidden-import", "win32api",
                 "--hidden-import", "win32com",
+                "--hidden-import", "win32",
                 '--splash',
                 'splash.png'
             ])
