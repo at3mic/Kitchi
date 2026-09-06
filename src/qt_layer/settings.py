@@ -22,7 +22,8 @@ class SettingsPage(QScrollArea):
     def initUI(self):
         """ 初始化UI """
         self.scrollWidget = QWidget()
-        self.scrollWidget.setObjectName("scrollWidget")
+        self.scrollWidget.setObjectName("scrollWidgetSettings")
+        self.scrollWidget.setStyleSheet("QWidget{background: transparent}")
         self.scrollLayout = QVBoxLayout(self.scrollWidget)
         self.scrollLayout.setContentsMargins(40, 40, 40, 40)
         self.scrollLayout.setSpacing(20)
@@ -123,6 +124,8 @@ class SettingsPage(QScrollArea):
         self.setWidgetResizable(True)
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.setFrameShape(QFrame.NoFrame)
+        self.viewport().setStyleSheet("background: transparent")
+
 
     def change_working_folder(self):
         if not (folder := QFileDialog.getExistingDirectory()):

@@ -373,6 +373,7 @@ class ProjectsPage(QFrame):
         self.refresh_projects()
         self.setAcceptDrops(True)
         self.initDropOverlay()
+        self.setStyleSheet("background: transparent")
 
     def initDropOverlay(self):
         """Creates a hidden, full-window overlay that alerts 'Drop Here' on drag move."""
