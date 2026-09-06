@@ -1021,7 +1021,6 @@ class AppCard(CardWidget):
 
         self.setFixedHeight(73)
         self.iconWidget.setFixedSize(48, 48)
-        self.contentLabel.setTextColor("#606060", "#d2d2d2")
         self.openButton.setFixedWidth(120)
 
         self.hBoxLayout.setContentsMargins(20, 11, 11, 11)
