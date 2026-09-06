@@ -1,3 +1,16 @@
+# Copyright (C) 2022-2026 The MIO-KITCHEN-SOURCE Project
+#
+# Licensed under the GNU AFFERO GENERAL PUBLIC LICENSE, Version 3.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      https://www.gnu.org/licenses/agpl-3.0.en.html#license-text
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 import json
 import os.path
 import platform
@@ -5,8 +18,8 @@ import random
 import sys
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QCursor, QColor, QFont
-from PySide6.QtWidgets import QVBoxLayout, QWidget, QGridLayout, QHBoxLayout, QFrame
+from PySide6.QtGui import QCursor
+from PySide6.QtWidgets import QVBoxLayout, QGridLayout, QHBoxLayout, QFrame
 from qfluentwidgets import (
     TitleLabel, BodyLabel, CaptionLabel, HyperlinkLabel,
     CardWidget

@@ -45,7 +45,7 @@ class SettingsPage(QScrollArea):
             configItem=cfg.language,
             icon=FluentIcon.LANGUAGE,
             title=self.tr("Language"),
-            content=self.tr("Change Language"),
+            content=self.tr("Choose your Language"),
             texts=cfg.allLanguagesHum
         )
         self.scrollLayout.addWidget(self.languageCard)
@@ -62,15 +62,15 @@ class SettingsPage(QScrollArea):
             cfg.projectStructure,
             FluentIcon.CONSTRACT,
             self.tr("Project Structure"),
-            "project Structure",
+            self.tr("Adjust project Structure"),
             texts=cfg.projectStructure.options
         )
         self.scrollLayout.addWidget(self.projectStructureCard)
         self.cpioImplCard = OptionsSettingCard(
             cfg.cpioImpl,
             FluentIcon.UNIT,
-            "cpioImpl",
-            "cpioImpl",
+            "cpio",
+            self.tr("cpioImpl"),
             texts=cfg.cpioImpl.options
         )
         # clean

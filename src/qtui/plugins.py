@@ -1082,7 +1082,7 @@ class BuiltInPlugins:
                 return
             if not magisk_path or not os.path.exists(magisk_path):
                 InfoBar.warning(
-                    "Magisk Patch", f"{magisk_path}'s not exist", parent=self.master
+                    self.master.tr("Magisk Patch"), f"{magisk_path}'s not exist", parent=self.master
                 )
                 return
             try:
