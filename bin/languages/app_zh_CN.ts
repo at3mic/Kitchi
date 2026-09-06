@@ -1076,9 +1076,20 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/projects.py" line="706"/>
         <location filename="../../src/qtui/projects.py" line="711"/>
+        <location filename="../../src/qtui/projects.py" line="723"/>
+        <location filename="../../src/qtui/projects.py" line="741"/>
         <location filename="../../src/qtui/projects.py" line="766"/>
         <source>Warning</source>
         <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="706"/>
+        <location filename="../../src/qtui/projects.py" line="711"/>
+        <location filename="../../src/qtui/projects.py" line="723"/>
+        <source>Cannot open folder:
+{}</source>
+        <translation>无法打开文件夹：
+{}</translation>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="728"/>
@@ -1102,9 +1113,19 @@ or click to select a file</source>
         <translation>确认删除</translation>
     </message>
     <message>
+        <location filename="../../src/qtui/projects.py" line="771"/>
+        <source>Remove &apos;{}&apos; ?</source>
+        <translation>是否删除&apos;{}&apos; ?</translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/projects.py" line="780"/>
         <source>Success</source>
         <translation>成功</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="780"/>
+        <source>Project {} Removed.</source>
+        <translation>项目 {} 已删除。.</translation>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="782"/>
@@ -1165,6 +1186,31 @@ or click to select a file</source>
         <location filename="../../src/qtui/projects.py" line="863"/>
         <source>Search partitions...</source>
         <translation>搜索分区。。。</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>NAME</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>SIZE</source>
+        <translation>大小</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>FS</source>
+        <translation>文件系统</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>IMAGE</source>
+        <translation>镜像</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>ATTRIBUTES</source>
+        <translation>属性</translation>
     </message>
     <message>
         <location filename="../../src/qtui/projects.py" line="871"/>
@@ -1490,6 +1536,8 @@ or click to select a file</source>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="1035"/>
+        <location filename="../../src/qtui/plugins.py" line="1080"/>
+        <location filename="../../src/qtui/plugins.py" line="1120"/>
         <source>Magisk Patch</source>
         <translation>面具修补</translation>
     </message>

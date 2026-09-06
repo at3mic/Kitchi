@@ -1073,8 +1073,18 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/projects.py" line="706"/>
         <location filename="../../src/qtui/projects.py" line="711"/>
+        <location filename="../../src/qtui/projects.py" line="723"/>
+        <location filename="../../src/qtui/projects.py" line="741"/>
         <location filename="../../src/qtui/projects.py" line="766"/>
         <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="706"/>
+        <location filename="../../src/qtui/projects.py" line="711"/>
+        <location filename="../../src/qtui/projects.py" line="723"/>
+        <source>Cannot open folder:
+{}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1099,8 +1109,18 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/qtui/projects.py" line="771"/>
+        <source>Remove &apos;{}&apos; ?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/projects.py" line="780"/>
         <source>Success</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="780"/>
+        <source>Project {} Removed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1161,6 +1181,31 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/projects.py" line="863"/>
         <source>Search partitions...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>NAME</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>SIZE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>FS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>IMAGE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/projects.py" line="870"/>
+        <source>ATTRIBUTES</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1487,6 +1532,8 @@ or click to select a file</source>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="1035"/>
+        <location filename="../../src/qtui/plugins.py" line="1080"/>
+        <location filename="../../src/qtui/plugins.py" line="1120"/>
         <source>Magisk Patch</source>
         <translation type="unfinished"></translation>
     </message>
