@@ -32,7 +32,7 @@ class FileChooser(MessageBoxBase):
 
         self.baseboot_edit = LineEdit(self)
         self.baseboot_edit.setPlaceholderText(self.tr("Select Boot from device..."))
-        self.baseboot_btn = PushButton("Choose...", self)
+        self.baseboot_btn = PushButton(self.tr("Choose..."), self)
 
         self.basesys_edit = LineEdit(self)
         self.basesys_edit.setPlaceholderText(self.tr("Select System from device..."))
