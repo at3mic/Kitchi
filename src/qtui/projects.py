@@ -1008,7 +1008,7 @@ class ProjectsPage(QFrame):
 
     def pack_super(self):
         if not project_manger.exist(cfg.currentProjectName.value):
-            show_info_bar(self, self.tr("Warning"), "project's not exist", 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("project's not exist"), 2)
             return
         dialog = PackSuperMessageBox(project_manger.current_work_path(), self)
         if dialog.exec_():
