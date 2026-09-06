@@ -1540,9 +1540,29 @@ or click to select a file</source>
         <translation>请选择一个插件！</translation>
     </message>
     <message>
+        <location filename="../../src/qtui/plugins.py" line="672"/>
+        <source>Plugin &apos;{}&apos; not found or cannot be uninstalled.</source>
+        <translation>插件 &apos;{}&apos; 未找到或无法被卸载。</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/plugins.py" line="674"/>
+        <source>Plugin &apos;{}&apos; is virtual and cannot be uninstalled this way.</source>
+        <translation>虚拟插件 &apos;{}&apos; 无法被卸载。</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/plugins.py" line="676"/>
+        <source>Are you sure you want to uninstall plugin &apos;{}&apos;?</source>
+        <translation>确定要卸载  &apos;{}&apos; 吗?</translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/plugins.py" line="686"/>
         <source>The following dependent plugins will also be removed:</source>
         <translation>以下依赖它的插件也将被卸载：</translation>
+    </message>
+    <message>
+        <location filename="../../src/qtui/plugins.py" line="715"/>
+        <source>Uninstall</source>
+        <translation>卸载</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="775"/>
