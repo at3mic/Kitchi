@@ -1018,15 +1018,14 @@ class ProjectsPage(QFrame):
                 int(dialog.super_size_edit.text()),
                 dialog.type_group.checkedId(),
                 dialog.get_selected_items(),
-                dialog.switch_delete.isChecked(),
-                0, "none" if dialog.attrib_group.checkedId() else "readonly", None, None, dialog._block_device_name
+                dialog.switch_delete.isChecked()
+                , "none" if dialog.attrib_group.checkedId() else "readonly", None, None, dialog._block_device_name
             )
             self.start_job(self.pack_super_task)
 
     def pack_super_exec(self, sparse: bool,
                         group_name: str, size: int,
                         super_type, part_list: list, del_: bool = False,
-                        return_cmd=0,
                         attrib='readonly',
                         output_dir: str = None, work: str = None, block_device_name: str = 'None'):
         if not block_device_name:
@@ -1073,8 +1072,7 @@ class ProjectsPage(QFrame):
         if sparse: command += ["--sparse"]
         output_super_path = f'{output_dir}/super.img'
         command += ['--out', output_super_path]
-        if return_cmd == 1:
-            return command
+
         if call(command, debug_binary=False) == 0:
             if os.access(output_super_path, os.F_OK):
                 print(self.tr("Pack Done！Output：%s") % output_super_path)
