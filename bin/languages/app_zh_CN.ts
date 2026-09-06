@@ -1133,6 +1133,11 @@ or click to select a file</source>
         <translation>错误</translation>
     </message>
     <message>
+        <location filename="../../src/qtui/projects.py" line="782"/>
+        <source>Failed to remove peoject: {}</source>
+        <translation>删除项目失败: {}</translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/projects.py" line="793"/>
         <source>Project Manage</source>
         <translation>项目管理</translation>

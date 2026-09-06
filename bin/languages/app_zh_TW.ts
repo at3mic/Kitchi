@@ -1129,6 +1129,11 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/qtui/projects.py" line="782"/>
+        <source>Failed to remove peoject: {}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/projects.py" line="793"/>
         <source>Project Manage</source>
         <translation type="unfinished"></translation>
