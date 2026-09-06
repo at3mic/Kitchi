@@ -998,7 +998,7 @@ class ProjectsPage(QFrame):
 
     def convert_image(self):
         if not project_manger.exist(cfg.currentProjectName.value):
-            show_info_bar(self, "warn", self.tr("project's not exist"), 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("project's not exist"), 2)
             return
         dialog = ConvertImageMessageBox(project_manger.current_work_path(), self)
         if dialog.exec_():
@@ -1008,7 +1008,7 @@ class ProjectsPage(QFrame):
 
     def pack_super(self):
         if not project_manger.exist(cfg.currentProjectName.value):
-            show_info_bar(self, "warn", "project's not exist", 2)
+            show_info_bar(self, self.tr("Warning"), "project's not exist", 2)
             return
         dialog = PackSuperMessageBox(project_manger.current_work_path(), self)
         if dialog.exec_():
@@ -1094,13 +1094,13 @@ class ProjectsPage(QFrame):
 
     def pack_zip(self):
         if not project_manger.exist(cfg.currentProjectName.value):
-            show_info_bar(self, "warn", self.tr("project's not exist"), 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("project's not exist"), 2)
             return
         dialog = RepackZipMessageBox(self)
         if dialog.exec_():
             if dialog.is_add_tools_checked():
                 if not dialog.get_device_code():
-                    show_info_bar(self, "warn", self.tr("device code's empty"), 3)
+                    show_info_bar(self, self.tr("Warning"), self.tr("device code's empty"), 3)
                     return
                 if PackHybridRom(dialog.get_device_code()):
                     return
@@ -1147,7 +1147,7 @@ class ProjectsPage(QFrame):
         data = []
         work = project_manger.current_work_path()
         if not os.path.exists(work):
-            InfoBar.warning("Projects", self.tr("Work path does not exist"), parent=self)
+            InfoBar.warning(self.tr("Projects"), self.tr("Work path does not exist"), parent=self)
             return data
         parts_dict = utils.JsonEdit(f"{work}/config/parts_info").read()
         for folder in os.listdir(work):
