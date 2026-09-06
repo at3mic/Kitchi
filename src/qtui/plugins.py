@@ -662,34 +662,18 @@ class UninstallMpk(MessageBoxBase):
         self.buttonLayout.deleteLater()
 
         # Build dynamic content warning strings
-        plugin_display_name_for_message = self.value2 if self.value2 else self.value
+        plugin_display_name_for_message = self.value2 or self.value
         if plugin_display_name_for_message is None:
-            plugin_display_name_for_message = getattr(lang, "unknown_plugin_name", "Unknown Plugin")
+            plugin_display_name_for_message = "Unknown Plugin"
 
         if not self.value:
             message_text = "Please select a plugin!"
         elif not self.check_pass:
-            msg_template = "Plugin '{plugin_id}' not found or cannot be uninstalled."
-            message_text = msg_template.format(plugin_id=plugin_display_name_for_message)
+            message_text = f"Plugin '{plugin_display_name_for_message}' not found or cannot be uninstalled."
         elif module_manager.is_virtual(self.value):
-            msg_template = "Plugin '{plugin_name}' is virtual and cannot be uninstalled this way."
-            message_text = msg_template.format(plugin_name=plugin_display_name_for_message)
+            message_text = f"Plugin '{plugin_display_name_for_message}' is virtual and cannot be uninstalled this way."
         else:
-            msg_template = "Are you sure you want to uninstall plugin '%s'?"
-            name_to_format = str(plugin_display_name_for_message)
-            try:
-                if "%s" in msg_template or "%S" in msg_template:
-                    message_text = msg_template % (name_to_format,)
-                elif "{0}" in msg_template:
-                    message_text = msg_template.format(name_to_format)
-                elif "{plugin_name}" in msg_template or "{name}" in msg_template:
-                    message_text = msg_template.format(plugin_name=name_to_format, name=name_to_format)
-                else:
-                    message_text = msg_template + f" ({name_to_format})"
-            except Exception as e_format:
-                logging.error(
-                    f"Error formatting message for t7: {e_format}. Template: '{msg_template}', Value: '{name_to_format}'")
-                message_text = msg_template
+            message_text = f"Are you sure you want to uninstall plugin '{plugin_display_name_for_message}'?"
 
         # Primary warning header (Replaces Tkinter Label with auto-wrapping Fluent label)
         self.msgLabel = SubtitleLabel(message_text, self)
