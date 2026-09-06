@@ -663,7 +663,7 @@ class PackSuperMessageBox(MessageBoxBase):
         self.viewLayout.addLayout(lf2_layout)
 
         # 5. Pack Partitions Section
-        self.viewLayout.addWidget(SubtitleLabel("打包分区", self))
+        self.viewLayout.addWidget(SubtitleLabel(self.tr("Partition(s)"), self))
         self.tl = ListWidget(self)
         self.tl.setMinimumHeight(180)
         self.viewLayout.addWidget(self.tl)
