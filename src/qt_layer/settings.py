@@ -4,7 +4,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QVBoxLayout, QWidget, QScrollArea, QFrame, QFileDialog
 from qfluentwidgets import (
     TitleLabel, SwitchSettingCard, FluentIcon, OptionsSettingCard, ComboBoxSettingCard,
-    PushSettingCard, PrimaryPushSettingCard
+    PushSettingCard, PrimaryPushSettingCard, setTheme
 )
 
 from src.core.utils import temp, re_folder, hum_convert
@@ -125,7 +125,10 @@ class SettingsPage(QScrollArea):
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.setFrameShape(QFrame.NoFrame)
         self.viewport().setStyleSheet("background: transparent")
+        cfg.themeChanged.connect(self.onThemeChanged)
 
+    def onThemeChanged(self, theme):
+        setTheme(theme)
 
     def change_working_folder(self):
         if not (folder := QFileDialog.getExistingDirectory()):
