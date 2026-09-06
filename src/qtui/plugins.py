@@ -879,10 +879,10 @@ class InstallMpk(MessageBoxBase):
         self.prog.setRange(0, 0)
         self.prog.hide()  # 初始未点击安装时先隐藏隐藏
 
-        self.state = SubtitleLabel("准备就绪", self)
+        self.state = SubtitleLabel(self.tr("Ready"), self)
         self.state.setAlignment(Qt.AlignCenter)
         self.installb = self.yesButton
-        self.installb.setText("安装")
+        self.installb.setText(self.tr("Install"))
         self.installb.setFixedHeight(36)
         self.installb.clicked.connect(self.install)
 
@@ -894,12 +894,12 @@ class InstallMpk(MessageBoxBase):
         self.finished.connect(self.parent.load_plugin_cards)
 
     def validate(self):
-        return self.installb.text() == "完成"
+        return self.installb.text() == self.tr("Done")
 
     def install(self):
         """核心安装逻辑与状态码转换"""
         # 逻辑 1：如果按钮字样变成了“完成/关闭”，则点击直接退出销毁
-        if self.installb.text() == "完成":
+        if self.installb.text() == self.tr("Done"):
             self.accept()  # 对应原代码：self.destroy()
             return 0
 
@@ -914,18 +914,18 @@ class InstallMpk(MessageBoxBase):
         if ret == module_error_codes.ArchNotSupported:
             self.state.setText(reason)
         elif ret == module_error_codes.PlatformNotSupport:
-            self.state.setText("不支持的系统 {}".format(platform.system()))
+            self.state.setText(self.tr("Unsupported System {}").format(platform.system()))
         elif ret == module_error_codes.DependsMissing:
             self.state.setText("%s 依赖于 %s，但 %s 没有安装" % (self.mconf.get('module', 'name'), reason, reason))
-            self.installb.setText("重试")
+            self.installb.setText(self.tr("Retry"))
             self.installb.setEnabled(True)
         elif ret == module_error_codes.IsBroken:
             self.state.setText("请选择一个插件")
-            self.installb.setText("重试")
+            self.installb.setText(self.tr("Retry"))
             self.installb.setEnabled(True)
         elif ret == module_error_codes.Normal:
             self.state.setText("安装完毕")
-            self.installb.setText("完成")
+            self.installb.setText(self.tr("Done"))
             self.installb.setEnabled(True)
 
         # 逻辑 5：安装动作完结，将进度条强行修正为 100% 满格静态长条
