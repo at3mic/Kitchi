@@ -916,7 +916,7 @@ class InstallMpk(MessageBoxBase):
         elif ret == module_error_codes.PlatformNotSupport:
             self.state.setText(self.tr("Unsupported System {}").format(platform.system()))
         elif ret == module_error_codes.DependsMissing:
-            self.state.setText("%s 依赖于 %s，但 %s 没有安装" % (self.mconf.get('module', 'name'), reason, reason))
+            self.state.setText(self.tr("%s Depends on %s，but %s not installed") % (self.mconf.get('module', 'name'), reason, reason))
             self.installb.setText(self.tr("Retry"))
             self.installb.setEnabled(True)
         elif ret == module_error_codes.IsBroken:
