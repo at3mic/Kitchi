@@ -149,7 +149,7 @@ class Caller:
             os.makedirs(temp, exist_ok=True)
         if not os.path.exists(update_info):
             JsonEdit(update_info).write({})
-        if not os.path.exists('bin/setting.ini'):
+        if not os.path.exists('bin/settings.json'):
             LOGE("Please Run The Tool under the MIO-KITCHEN/TIK Root Dir.")
             return False
         return True
