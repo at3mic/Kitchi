@@ -1077,7 +1077,7 @@ class BuiltInPlugins:
             magisk_path = dialog.magiskApkLineEdit.text()
             if not boot_path or not os.path.exists(boot_path):
                 InfoBar.warning(
-                    "Magisk Patch", f"{boot_path}'s not exist", parent=self.master
+                    self.master.tr("Magisk Patch"), f"{boot_path}'s not exist", parent=self.master
                 )
                 return
             if not magisk_path or not os.path.exists(magisk_path):
@@ -1117,7 +1117,7 @@ class BuiltInPlugins:
             except Exception as e:
                 # I log any exceptions during patching and inform the user.
                 logging.exception("Magisk patching error")
-                InfoBar.warning("Magisk Patch", f"Magisk patching failed: {str(e)}", parent=self.master)
+                InfoBar.warning(self.master.tr("Magisk Patch"), f"Magisk patching failed: {str(e)}", parent=self.master)
 
     def merge_qcom_images(self):
         dialog = MergeQualcommImageMessageBox(self.master)
