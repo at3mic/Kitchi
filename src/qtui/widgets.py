@@ -117,11 +117,11 @@ class InputDialog(MessageBoxBase):
 
         self.titleLabel = SubtitleLabel(title, self)
         self.nameLineEdit = LineEdit(self)
-        self.nameLineEdit.setPlaceholderText('输入')
+        self.nameLineEdit.setPlaceholderText(self.tr('Type'))
         self.nameLineEdit.setClearButtonEnabled(True)
         self.nameLineEdit.setText(initial_text)
 
-        self.errorLabel = CaptionLabel(text="无效")
+        self.errorLabel = CaptionLabel(text=self.tr("invalid"))
         self.errorLabel.setTextColor("#cf1010", QColor(255, 28, 32))
 
         self.viewLayout.addWidget(self.titleLabel)
@@ -146,13 +146,13 @@ class InputDialog(MessageBoxBase):
     def validate(self):
         project_name = self.nameLineEdit.text().strip()
         if not project_name:
-            self.errorLabel.setText("不能为空")
+            self.errorLabel.setText(self.tr("Cannot be empty."))
             self.errorLabel.show()
             return False
 
         invalid_chars = ['/', '\\', ':', '*', '?', '"', '<', '>', '|']
         if any(char in project_name for char in invalid_chars):
-            self.errorLabel.setText("包含非法字符")
+            self.errorLabel.setText(self.tr("Contain invalid chars"))
             self.errorLabel.show()
             return False
 
@@ -176,9 +176,9 @@ class ConvertImageMessageBox(MessageBoxBase):
         self.path = path  # 保存原始完整列表，用于搜索过滤
 
         # 1. 设置标准对话框标题与底层按钮文本
-        self.titleLabel = SubtitleLabel("Convert image", self)
-        self.yesButton.setText("OK")
-        self.cancelButton.setText("Cancel")
+        self.titleLabel = SubtitleLabel(self.tr("Convert image"), self)
+        self.yesButton.setText(self.tr("OK"))
+        self.cancelButton.setText(self.tr("Cancel"))
 
         # 2. 创建源与目标格式下拉框
         self.src_combo = ComboBox(self)
@@ -199,9 +199,9 @@ class ConvertImageMessageBox(MessageBoxBase):
         self.list_widget.setMaximumHeight(200)
 
         # 4. 创建底部控制部件：全选复选框 & 搜索输入框
-        self.select_all_checkbox = CheckBox("Select all", self)
+        self.select_all_checkbox = CheckBox(self.tr("Select all"), self)
         self.search_input = LineEdit(self)
-        self.search_input.setPlaceholderText("search...")
+        self.search_input.setPlaceholderText(self.tr("search..."))
         self.search_input.setClearButtonEnabled(True)
 
         # 5. 构建布局结构
@@ -483,7 +483,7 @@ class PackSettingsDialog(MessageBoxBase):
 
         # Brotli 等级滑动条区域
         brotli_row = QHBoxLayout()
-        self.brotli_lbl = QLabel("Brotli等级: 0", other_container)
+        self.brotli_lbl = QLabel(self.tr("Brotli Level: 0"), other_container)
         self.brotli_lbl.setStyleSheet("color: #ffffff; font-size: 15px; font-weight: 500; min-width: 100px;")
         self.brotli_slider = Slider(Qt.Orientation.Horizontal, other_container)
         self.brotli_slider.setRange(0, 11)
@@ -523,7 +523,7 @@ class PackSettingsDialog(MessageBoxBase):
         self.sw_convert = SwitchButton(other_container)
         self.sw_convert.setOffText('')
         self.sw_convert.setOnText('')
-        self.lbl_convert = QLabel("文件系统转换", other_container)
+        self.lbl_convert = QLabel(self.tr("Fs Convert"), other_container)
         self.lbl_convert.setStyleSheet("color: #ffffff; font-size: 13px;")
 
         # 💡 创建隐藏的文件系统来源与目标下拉框组合
@@ -616,7 +616,7 @@ class PackSuperMessageBox(MessageBoxBase):
         self.widget.setMinimumWidth(450)
 
         # 1. Main Header Title
-        self.titleLabel = SubtitleLabel("Pack Super", self)
+        self.titleLabel = SubtitleLabel(self.tr("Pack Super"), self)
         self.viewLayout.addWidget(self.titleLabel)
 
         # 2. Partition Type Section
