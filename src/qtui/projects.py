@@ -703,12 +703,12 @@ class ProjectsPage(QFrame):
     def open_dir(self):
         name = self.project_combo.currentText()
         if not project_manger.exist(name):
-            show_info_bar(self, self.tr("Warning"), f"Cannot open folder:\n{name}", 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("Cannot open folder:\n{}").format(name), 2)
             return
 
         path = project_manger.get_work_path(name)
         if not path or not os.path.exists(path):
-            show_info_bar(self, self.tr("Warning"), f"Cannot open folder:\n{path}", 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("Cannot open folder:\n{}").format(path), 2)
             return
 
         try:
@@ -720,7 +720,7 @@ class ProjectsPage(QFrame):
             else:
                 subprocess.Popen(['xdg-open', path])
         except Exception:
-            show_info_bar(self, "Warning", f"Cannot open folder:\n{path}", 2)
+            show_info_bar(self, self.tr("Warning"), self.tr("Cannot open folder:\n{}").format(path), 2)
 
     def show_create_dialog(self):
         """显示创建项目对话框"""
@@ -738,7 +738,7 @@ class ProjectsPage(QFrame):
         """显示创建项目对话框"""
         project_name = cfg.currentProjectName.value
         if not project_name or not self.project_combo.currentText():
-            show_info_bar(self, "Warning", self.tr("Select a project first"), bar_type=2)
+            show_info_bar(self, self.tr("Warning"), self.tr("Select a project first"), bar_type=2)
             return
         dialog = NewProjectDialog(
             title=self.tr("Rename Project"),
