@@ -909,6 +909,11 @@ or click to select a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/qtui/widgets.py" line="666"/>
+        <source>Partition(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/widgets.py" line="673"/>
         <location filename="../../src/qtui/widgets.py" line="674"/>
         <source>Enable Sparse</source>

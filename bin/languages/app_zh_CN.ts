@@ -912,6 +912,11 @@ or click to select a file</source>
         <translation>Super大小</translation>
     </message>
     <message>
+        <location filename="../../src/qtui/widgets.py" line="666"/>
+        <source>Partition(s)</source>
+        <translation>分区</translation>
+    </message>
+    <message>
         <location filename="../../src/qtui/widgets.py" line="673"/>
         <location filename="../../src/qtui/widgets.py" line="674"/>
         <source>Enable Sparse</source>
