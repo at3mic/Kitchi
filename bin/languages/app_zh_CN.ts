@@ -430,55 +430,55 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/plugins.py" line="882"/>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>就绪</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="885"/>
         <source>Install</source>
-        <translation type="unfinished">安装</translation>
+        <translation>安装</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="897"/>
         <location filename="../../src/qtui/plugins.py" line="902"/>
         <location filename="../../src/qtui/plugins.py" line="928"/>
         <source>Done</source>
-        <translation type="unfinished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="917"/>
         <source>Unsupported System {}</source>
-        <translation type="unfinished"></translation>
+        <translation>不支持的系统： {}</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="920"/>
         <location filename="../../src/qtui/plugins.py" line="924"/>
         <source>Retry</source>
-        <translation type="unfinished"></translation>
+        <translation>就绪</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="923"/>
         <source>The plugin&apos;s broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>该插件已损坏。</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="927"/>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>已安装</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="973"/>
         <source>Author：{}</source>
-        <translation type="unfinished"></translation>
+        <translation>作者：{}</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="974"/>
         <source>Version：{}</source>
-        <translation type="unfinished"></translation>
+        <translation>版本：{}</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="982"/>
         <source>PLease select a plugin</source>
-        <translation type="unfinished"></translation>
+        <translation>请选择一个插件</translation>
     </message>
 </context>
 <context>
@@ -1340,12 +1340,12 @@ or click to select a file</source>
     <message>
         <location filename="../../src/qtui/plugins.py" line="775"/>
         <source>Uninstalling：{}</source>
-        <translation type="unfinished"></translation>
+        <translation>正在卸载：{}</translation>
     </message>
     <message>
         <location filename="../../src/qtui/plugins.py" line="813"/>
         <source>Uninstall {} Done！</source>
-        <translation type="unfinished"></translation>
+        <translation>卸载在 {} 完成！</translation>
     </message>
 </context>
 <context>
