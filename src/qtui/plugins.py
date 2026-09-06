@@ -401,7 +401,7 @@ class ModuleManager:
             print("{} 未完全安装或损坏".format(value))
 
         else:
-            print("此插件不可运行".format(self.get_name(id_)))
+            print("此插件不可运行 {}".format(self.get_name(id_)))
         return 0
 
     @staticmethod
