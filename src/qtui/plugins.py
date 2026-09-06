@@ -1160,7 +1160,7 @@ class BuiltInPlugins:
                 if name in fstab_files:
                     for fstab_path in fstab_files[name]:
                         process_fstab(fstab_path)
-                        InfoBar.success("Disabled Avb", f"Patched fstab at {name}", parent=self.master)
+                        InfoBar.success(self.master.tr("Disabled Avb"), f"Patched fstab at {name}", parent=self.master)
 
     def allow_selinux_audit(self):
         dialog = AllowSELinuxAuditMessageBox(self.master)
